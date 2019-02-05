@@ -73,9 +73,25 @@ Praesent fringilla a ligula et dapibus. Nulla eleifend nisl neque, sed vehicula 
   <div class="rightpane">
     <h1></h1></div>
 </div>
+<div id="bottomBar">
+    <div class="imgHolder">
+        <a href="https://www.doc.ic.ac.uk/~pl1515/">
+            <img class="img-responsive" src="ICLpic.png" align="middle" id="iclLogo">
+        </a>
+    </div>
+</div>
 <script>
-  $("#bar").hover(function(){
-    $(".collapse").collapse("toggle");
+  $("#bar").mouseenter(function(){
+    $(".collapse").collapse("show");
+  });
+  $("#bar").mouseleave(function(){
+      $(".collapse").collapse("hide");
+  });
+  $("#iclLogo").mouseenter(function() {
+      $(this).animate({"max-height" : "150px", "padding-top" : "20px"});
+  })
+  $("#iclLogo").mouseleave(function() {
+      $(this).animate({"max-height" : "125px", "padding-top" : "40px"});
   });
 </script>
 
