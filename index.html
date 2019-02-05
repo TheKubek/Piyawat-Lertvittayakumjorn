@@ -1,17 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <p>Home</p>
-    <ul class="menu" style="list-style-type: none;">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="nlp.html">NLPs</a></li>
-      <li><a href="explainnlp.html">Explainable NLPs</a></li>
-      <li><a href="wordembeddings.html">Word Embeddings</a></li>
-      <li><a href="interpwordembeddings.html">Interpretable Word Embeddings</a></li>
-    </ul>
-  </body>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="piyawatStyles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggle">
+    <div class="bg-dark p-4">
+      <div class="container-fluid">
+      <!-- Control the column width, and how they should appear on different devices -->
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2">
+          <a href="index.html" class="btn btn-link" role="button">Home</a>
+        </div>
+        <div class="col-sm-2">
+          <a href="nlp.html" class="btn btn-link" role="button">NLPs</a>
+        </div>
+        <div class="col-sm-2">
+            <a href="explainnlp.html" class="btn btn-link" role="button">Explainable NLPs</a>
+        </div>
+        <div class="col-sm-2">
+            <a href="wordembeddings.html" class="btn btn-link" role="button">Word Embeddings</a>
+        </div>
+        <div class="col-sm-2">
+            <a href="interpwordembeddings.html" class="btn btn-link" role="button">Interpretable Word Embeddings</a>
+        </div>
+      <div class="col-sm-1"></div>
+
+      </div>
+      <br>
+    </div>
+    </div>
+  </div>
+  <nav class="navbar fixed-left navbar-dark bg-dark" id="bar">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4"></div>
+          <div class="col-sm-4">
+            <p id="guyName">PIYAWAT LERTVITTAYAKUMJORN</p>
+          </div>
+        <div class="col-sm-4"></div>
+      </div>
+    </div>
+  </nav>
+</div>
+<script>
+  $("#bar").hover(function(){
+    console.log("hey");
+    $(".collapse").collapse("toggle");
+  });
+
+  $(document).ready(function(){
+    $(".btn-primary").hover(function(){
+      $(".collapse").collapse('toggle');
+    });
+    $(".btn-success").click(function(){
+      $(".collapse").collapse('show');
+    });
+    $(".btn-warning").click(function(){
+      $(".collapse").collapse('hide');
+    });
+  });
+</script>
+
+</body>
 </html>
