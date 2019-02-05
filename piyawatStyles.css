@@ -1,3 +1,23 @@
-.pos-f-t #bar {
+.pos-f-t #bar{
+    text-align: center;
+    width: 100%;
+}
+
+#nameRow {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+#guyName {
+    font-family: "Arial";
+    font-weight: bold;
+    color: #cbc1c8;
+    font-size: 20px;
+    text-align: center;
+}
+
+.pageLinks {
     text-align: center;
 }
