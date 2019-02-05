@@ -10,45 +10,54 @@
 </head>
 <body>
 
-<div class="pos-f-t">
-  <div class="collapse" id="navbarToggle">
-    <div class="bg-dark p-4" id="navbarContent">
-      <div class="container-fluid">
-      <!-- Control the column width, and how they should appear on different devices -->
-      <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-2 pageLinks">
-          <a href="index.html" class="btn btn-info" role="button">Home</a>
+<div class="container" id="mainContainer">
+  <div class="toppane">
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggle">
+        <div class="bg-dark p-4" id="navbarContent">
+          <div class="container-fluid">
+            <!-- Control the column width, and how they should appear on different devices -->
+            <div class="row">
+              <div class="col-sm-1"></div>
+              <div class="col-sm-2 pageLinks">
+                <a href="index.html" class="btn btn-info" role="button">Home</a>
+              </div>
+              <div class="col-sm-2 pageLinks">
+                <a href="nlp.html" class="btn btn-info" role="button">NLPs</a>
+              </div>
+              <div class="col-sm-2 pageLinks">
+                <a href="explainnlp.html" class="btn btn-info" role="button">Explainable NLPs</a>
+              </div>
+              <div class="col-sm-2 pageLinks">
+                <a href="wordembeddings.html" class="btn btn-info" role="button">Word Embeddings</a>
+              </div>
+              <div class="col-sm-2 pageLinks">
+                <a href="interpwordembeddings.html" class="btn btn-info" role="button">Interpretable Word Embeddings</a>
+              </div>
+              <div class="col-sm-1"></div>
+            </div>
+            <br>
+          </div>
         </div>
-        <div class="col-sm-2 pageLinks">
-          <a href="nlp.html" class="btn btn-info" role="button">NLPs</a>
-        </div>
-        <div class="col-sm-2 pageLinks">
-            <a href="explainnlp.html" class="btn btn-info" role="button">Explainable NLPs</a>
-        </div>
-        <div class="col-sm-2 pageLinks">
-            <a href="wordembeddings.html" class="btn btn-info" role="button">Word Embeddings</a>
-        </div>
-        <div class="col-sm-2 pageLinks">
-            <a href="interpwordembeddings.html" class="btn btn-info" role="button">Interpretable Word Embeddings</a>
-        </div>
-      <div class="col-sm-1"></div>
       </div>
-      <br>
-    </div>
+      <nav class="navbar fixed-left navbar-dark bg-dark" id="bar">
+        <div class="container-fluid">
+          <div class="row" id="nameRow">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+              <p id="guyName">PIYAWAT LERTVITTAYAKUMJORN</p>
+            </div>
+            <div class="col-sm-3"></div>
+          </div>
+        </div>
+      </nav>
     </div>
   </div>
-  <nav class="navbar fixed-left navbar-dark bg-dark" id="bar">
-    <div class="container-fluid">
-      <div class="row" id="nameRow">
-        <div class="col-sm-3"></div>
-          <div class="col-sm-6">
-            <p id="guyName">PIYAWAT LERTVITTAYAKUMJORN</p>
-          </div>
-        <div class="col-sm-3"></div>
-      </div>
-    </div>
-  </nav>
+  <div class="leftpane">
+    <h1></h1></div>
+  <div class="middlepane"></div>
+  <div class="rightpane">
+    <h1></h1></div>
 </div>
 <script>
   $("#bar").hover(function(){
