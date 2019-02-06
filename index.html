@@ -68,24 +68,25 @@
           I am currently researching on interpretable word embeddings that would be used for an explainable natural language processing (NLP) program. Interpretable word embeddings are representations of words in way that a machine learning algorithm can process but is still able to be understood by a human being. These words would still be associated by values, but these values represent the attributes of the words such as its grammar and context it is used in. An NLP is a program that can process natural languages humans use and run tasks given to process the language such as translation or word comprehension. However, with current implementations of NLP we cannot retrieve any information on how the program processes its tasks due to the nature of machine learning and deep learning. Thus, with the use of interpretable NLP we can pull this information that can justify the program’s actions and fix it if the results are not desirable. This data can also be used to create rules that can be implemented for similar tasks.
       </p>
     </div>
+    <hr>
     <div class="sectionMenu container-fluid">
       <div class="row popup-gallery">
-        <div class="col-lg-6 col-sm-6">
+        <div class="col-lg-6 col-sm-6 menuPics">
           <a class="portfolio-box" href="ICLPIC.jpg">
             <img class="img-fluid" src="ICLPIC.jpg" alt="">
           </a>
         </div>
-        <div class="col-lg-6 col-sm-6">
+        <div class="col-lg-6 col-sm-6 menuPics">
           <a class="portfolio-box" href="ICLPIC.jpg">
             <img class="img-fluid" src="ICLPIC.jpg" alt="">
           </a>
         </div>
-        <div class="col-lg-6 col-sm-6">
+        <div class="col-lg-6 col-sm-6 menuPics">
           <a class="portfolio-box" href="ICLPIC.jpg">
             <img class="img-fluid" src="ICLPIC.jpg" alt="">
           </a>
         </div>
-        <div class="col-lg-6 col-sm-6">
+        <div class="col-lg-6 col-sm-6 menuPics">
           <a class="portfolio-box" href="ICLPIC.jpg">
             <img class="img-fluid" src="ICLPIC.jpg" alt="">
           </a>
@@ -93,23 +94,29 @@
       </div>
     </div>
     <hr>
+    <h4 id="teamTitle">OUR TEAM</h4>
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-2 ourPics">
           <img class="img-fluid rounded-circle us" src="fhb.jpg" alt="">
+          <p class="names">KYLE PATEL</p>
         </div>
         <div class="col-sm-2 ourPics">
           <img class="img-fluid rounded-circle us" src="fhb.jpg" alt="">
+          <p class="names">GIACOMO LA SCALA</p>
         </div>
         <div class="col-sm-2 ourPics">
           <img class="img-fluid rounded-circle us" src="fhb.jpg" alt="">
+          <p class="names">EDWARD WILLIAMS</p>
         </div>
         <div class="col-sm-2 ourPics">
           <img class="img-fluid rounded-circle us" src="fhb.jpg" alt="">
+          <p class="names">KUBAAAAAA</p>
         </div>
         <div class="col-sm-2 ourPics">
           <img class="img-fluid rounded-circle us" src="fhb.jpg" alt="">
+          <p class="names">KEIGO</p>
         </div>
         <div class="col-sm-1"></div>
       </div>
@@ -134,17 +141,26 @@
   $("#bar").mouseleave(function(){
       $(".collapse").collapse("hide");
   });
+
   $("#iclLogo").mouseenter(function() {
       $(this).animate({"max-height" : "150px", "padding-top" : "20px"});
   })
   $("#iclLogo").mouseleave(function() {
       $(this).animate({"max-height" : "125px", "padding-top" : "40px"});
   });
+
   $(".us").mouseenter(function(){
     $(this).animate({"opacity" : "1"});
   })
   $(".us").mouseleave(function(){
     $(this).animate({"opacity" : "0.7"});
+  })
+
+  $(".menuPics").mouseenter(function(){
+    $(this).animate({"padding" : "10px"});
+  })
+  $(".menuPics").mouseleave(function(){
+    $(this).animate({"padding" : "0px"});
   })
 </script>
 

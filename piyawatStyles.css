@@ -102,7 +102,7 @@ hr {
 
 .mainText {
     text-align: justify;
-    padding: 20px 50px;
+    padding: 0px 50px;
     color: #61615F;
     font-family: orkney_reg;
 }
@@ -114,6 +114,19 @@ hr {
 
 .mainParagraph {
     font-size: 13px;
+}
+
+.names {
+    padding-top: 10px;
+    text-align: center;
+    color: #717171;
+    font-family: orkney_bold;
+}
+
+#teamTitle {
+    color: #1D3A56;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 /*------------------------------------------------------------*/
@@ -131,7 +144,7 @@ hr {
     padding: 0px;
 }
 
-/*---------------------- ICL Logo Management ------------------*/
+/*---------------------- Image Management ------------------*/
 
 .img-responsive {
     text-align: center;
@@ -163,15 +176,14 @@ hr {
 }
 
 .ourPics {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 10px 40px 10px 40px;
 }
 
 .us {
     opacity: 0.7;
+    border: 3px solid #1D3A56;
 }
+
 
 /*------------------------------------------------------------*/
 
