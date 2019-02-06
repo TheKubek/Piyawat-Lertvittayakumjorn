@@ -1,3 +1,5 @@
+/*------------------- Nav Bar Management ---------------------*/
+
 .pos-f-t #bar{
     text-align: center;
     width: 100%;
@@ -9,6 +11,10 @@
     padding-top: 30px;
 }
 
+/*------------------------------------------------------------*/
+
+
+/*------------------ Nav Bar Main Heading --------------------*/
 #littleBar {
     background-color: #1D3A56;
 }
@@ -20,13 +26,21 @@
     width: 100%;
 }
 
+/* Loads the font for the nav bar name*/
+@font-face {
+    font-family: orkney_bold;
+    src: url("fonts/orkneyBold.woff");
+}
+
 #guyName {
-    font-family: "Arial";
+    font-family: orkney_bold;
     font-weight: bold;
     color: #cbc1c8;
     font-size: 20px;
     text-align: center;
 }
+
+/*------------------------------------------------------------*/
 
 .pageLinks {
     text-align: center;
@@ -44,6 +58,8 @@ body, html {
     height: 100%;
 }
 
+
+/*--- Window Pane Division ---*/
 .leftpane {
     width: 15%;
     height: 100%;
@@ -70,10 +86,21 @@ body, html {
     border-collapse: collapse;
 }
 
+/*------------------------------------------------------------*/
+
+
+/*------------------- Text Divs Management -------------------*/
+/*New font for the main text*/
+@font-face {
+  font-family: orkney_reg;
+  src: url("fonts/orkneyRegular.woff");
+}
+
 .mainText {
   text-align: justify;
   padding: 20px 50px;
   color: #61615F;
+  font-family: orkney_reg;
 }
 
 .mainHeading {
@@ -85,6 +112,8 @@ body, html {
   font-size: 13px;
 }
 
+/*------------------------------------------------------------*/
+
 #mainContainer {
     max-width: 10000px;
 }
@@ -93,6 +122,8 @@ body, html {
     background-color: #1D3A56;
     padding: 20px;
 }
+
+/*---------------------- ICL Logo Management ------------------*/
 
 .img-responsive {
     text-align: center;
@@ -123,7 +154,12 @@ body, html {
     -moz-border-radius: 30%;
 }
 
+/*------------------------------------------------------------*/
+
+/*------------------ Random Make it Work ---------------------*/
 /* Indents paragraph*/
 .tab{
     text-indent: 5%;
 }
+
+/*------------------------------------------------------------*/
