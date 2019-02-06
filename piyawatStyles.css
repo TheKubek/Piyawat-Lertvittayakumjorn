@@ -1,6 +1,6 @@
 /*------------------- Nav Bar Management ---------------------*/
 
-.pos-f-t #bar{
+.pos-f-t #bar {
     text-align: center;
     width: 100%;
     background-color: #1D3A56;
@@ -58,6 +58,11 @@ body, html {
     height: 100%;
 }
 
+hr {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 
 /*--- Window Pane Division ---*/
 .leftpane {
@@ -70,7 +75,6 @@ body, html {
 
 .middlepane {
     width: 70%;
-    height: 100%;
     float: left;
     background-color: white;
     border-collapse: collapse;
@@ -92,24 +96,24 @@ body, html {
 /*------------------- Text Divs Management -------------------*/
 /*New font for the main text*/
 @font-face {
-  font-family: orkney_reg;
-  src: url("fonts/orkneyRegular.woff");
+    font-family: orkney_reg;
+    src: url("fonts/orkneyRegular.woff");
 }
 
 .mainText {
-  text-align: justify;
-  padding: 20px 50px;
-  color: #61615F;
-  font-family: orkney_reg;
+    text-align: justify;
+    padding: 20px 50px;
+    color: #61615F;
+    font-family: orkney_reg;
 }
 
 .mainHeading {
-  font-weight: bold;
-  padding: 10px 40px;
+    font-weight: bold;
+    padding: 10px 40px;
 }
 
 .mainParagraph {
-  font-size: 13px;
+    font-size: 13px;
 }
 
 /*------------------------------------------------------------*/
@@ -121,6 +125,10 @@ body, html {
 #bottomBar {
     background-color: #1D3A56;
     padding: 20px;
+}
+
+.col-lg-6 {
+    padding: 0px;
 }
 
 /*---------------------- ICL Logo Management ------------------*/
@@ -145,7 +153,7 @@ body, html {
 }
 
 /* Resizes image according to browser size*/
-.imgResizeAndBorder{
+.imgResizeAndBorder {
     height: 30%;
     width: 30%;
     border: 5px solid gray;
@@ -154,11 +162,22 @@ body, html {
     -moz-border-radius: 30%;
 }
 
+.ourPics {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.us {
+    opacity: 0.7;
+}
+
 /*------------------------------------------------------------*/
 
 /*------------------ Random Make it Work ---------------------*/
 /* Indents paragraph*/
-.tab{
+.tab {
     text-indent: 5%;
 }
 
