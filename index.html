@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project : Home</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="piyawatStyles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -19,19 +20,19 @@
             <div class="row">
               <div class="col-sm-1"></div>
               <div class="col-sm-2 pageLinks">
-                <a href="index.html" class="btn btn-info" role="button">Home</a>
+                <a href="index.html">Home</a>
               </div>
               <div class="col-sm-2 pageLinks">
-                <a href="nlp.html" class="btn btn-info" role="button">NLPs</a>
+                <a href="nlp.html">NLPs</a>
               </div>
               <div class="col-sm-2 pageLinks">
-                <a href="explainnlp.html" class="btn btn-info" role="button">Explainable NLPs</a>
+                <a href="explainnlp.html">Explainable NLPs</a>
               </div>
               <div class="col-sm-2 pageLinks">
-                <a href="wordembeddings.html" class="btn btn-info" role="button">Word Embeddings</a>
+                <a href="wordembeddings.html">Word Embeddings</a>
               </div>
               <div class="col-sm-2 pageLinks">
-                <a href="interpwordembeddings.html" class="btn btn-info" role="button">Interpretable Word Embeddings</a>
+                <a href="interpwordembeddings.html">Interpretable Word Embeddings</a>
               </div>
               <div class="col-sm-1"></div>
             </div>
@@ -41,10 +42,10 @@
       </div>
       <nav class="navbar-default fixed-left" id="bar">
         <div class="container-fluid">
-          <div class="row" id="nameRow">
+          <div class="row" id="projectRow">
             <div class="col-sm-3"></div>
             <div class="col-sm-6">
-              <p id="guyName">PIYAWAT LERTVITTAYAKUMJORN</p>
+              <a href="index.html" id="guyName">INTERPRETABLE WORD EMBEDDINGS & EXPLAINABLE NLP</a>
             </div>
             <div class="col-sm-3"></div>
           </div>
@@ -55,43 +56,49 @@
   <div class="leftpane">
     <h1></h1></div>
   <div class="middlepane">
-    <div class="mainText">
+    <div id="sectionMenuHolder">
       <hr>
-      <img src="https://www.doc.ic.ac.uk/~pl1515/images/Profile2.jpg" alt="Profile Picture" class="imgCenter imgResizeAndBorder">
-      <h3 class="mainHeading"><b>About me:</b></h3>
-      <p class="mainParagraph tab">
-          I am Piyawat Lertivittayakumjorn, you can call me ‘Peter’, and I am from Thailand. Currently, I am a PhD student in Computing at Imperial College London under the supervision of Professor Francesca Toni. You can find out more about me on my personal page <a href="https://www.doc.ic.ac.uk/~pl1515/">here</a>.
-      </p>
-      <hr>
-      <h3 class="mainHeading"><b>My Research:</b></h3>
-      <p class="mainParagraph tab">
-          I am currently researching on interpretable word embeddings that would be used for an explainable natural language processing (NLP) program. Interpretable word embeddings are representations of words in way that a machine learning algorithm can process but is still able to be understood by a human being. These words would still be associated by values, but these values represent the attributes of the words such as its grammar and context it is used in. An NLP is a program that can process natural languages humans use and run tasks given to process the language such as translation or word comprehension. However, with current implementations of NLP we cannot retrieve any information on how the program processes its tasks due to the nature of machine learning and deep learning. Thus, with the use of interpretable NLP we can pull this information that can justify the program’s actions and fix it if the results are not desirable. This data can also be used to create rules that can be implemented for similar tasks.
-      </p>
-    </div>
-    <hr>
-    <div class="sectionMenu container-fluid">
-      <div class="row popup-gallery">
-        <div class="col-lg-6 col-sm-6 menuPics">
-          <a class="portfolio-box" href="ICLPIC.jpg">
-            <img class="img-fluid" src="ICLPIC.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6 col-sm-6 menuPics">
-          <a class="portfolio-box" href="ICLPIC.jpg">
-            <img class="img-fluid" src="ICLPIC.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6 col-sm-6 menuPics">
-          <a class="portfolio-box" href="ICLPIC.jpg">
-            <img class="img-fluid" src="ICLPIC.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6 col-sm-6 menuPics">
-          <a class="portfolio-box" href="ICLPIC.jpg">
-            <img class="img-fluid" src="ICLPIC.jpg" alt="">
-          </a>
+      <div class="container-fluid" id="sectionMenu">
+        <div class="row popup-gallery">
+          <div class="col-lg-6 col-sm-6 menuPics">
+            <a class="portfolio-box" href="ICLPIC.jpg">
+              <img class="img-fluid" src="ICLPIC.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6 col-sm-6 menuPics">
+            <a class="portfolio-box" href="ICLPIC.jpg">
+              <img class="img-fluid" src="ICLPIC.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6 col-sm-6 menuPics">
+            <a class="portfolio-box" href="ICLPIC.jpg">
+              <img class="img-fluid" src="ICLPIC.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6 col-sm-6 menuPics">
+            <a class="portfolio-box" href="ICLPIC.jpg">
+              <img class="img-fluid" src="ICLPIC.jpg" alt="">
+            </a>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="mainText">
+      <hr>
+      <div class="contentBox">
+        <img id="profilePic" src="https://www.doc.ic.ac.uk/~pl1515/images/Profile2.jpg" alt="Profile Picture" class="imgResizeAndBorder">
+        <div id="aboutContent">
+          <h3 class="mainHeading"><b>About me:</b></h3>
+          <p class="tab" id="aboutPiya">
+            I am Piyawat Lertivittayakumjorn, you can call me ‘Peter’, and I am from Thailand. Currently, I am a PhD student in Computing at Imperial College London under the supervision of Professor Francesca Toni. You can find out more about me on my personal page <a href="https://www.doc.ic.ac.uk/~pl1515/" id="piyaLink">here</a>.
+          </p>
+        </div>
+      </div>
+      <hr>
+      <h3 id="researchHeading"><b>My Research:</b></h3>
+      <p class="tab" id="researchParagraph">
+          I am currently researching on interpretable word embeddings that would be used for an explainable natural language processing (NLP) program. Interpretable word embeddings are representations of words in way that a machine learning algorithm can process but is still able to be understood by a human being. These words would still be associated by values, but these values represent the attributes of the words such as its grammar and context it is used in. An NLP is a program that can process natural languages humans use and run tasks given to process the language such as translation or word comprehension. However, with current implementations of NLP we cannot retrieve any information on how the program processes its tasks due to the nature of machine learning and deep learning. Thus, with the use of interpretable NLP we can pull this information that can justify the program’s actions and fix it if the results are not desirable. This data can also be used to create rules that can be implemented for similar tasks.
+      </p>
     </div>
     <hr>
     <h4 id="teamTitle">OUR TEAM</h4>

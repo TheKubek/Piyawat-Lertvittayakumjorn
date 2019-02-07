@@ -15,15 +15,18 @@
 
 
 /*------------------ Nav Bar Main Heading --------------------*/
+/*Little bar with name of the project*/
 #littleBar {
     background-color: #1D3A56;
 }
 
-#nameRow {
+/*Row with the name of the project*/
+#projectRow {
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 15px;
     width: 100%;
+    height: 70px;
 }
 
 /* Loads the font for the nav bar name*/
@@ -38,6 +41,10 @@
     color: #cbc1c8;
     font-size: 20px;
     text-align: center;
+}
+
+#guyName:hover {
+  text-decoration: none;
 }
 
 /*------------------------------------------------------------*/
@@ -103,11 +110,12 @@ hr {
 .mainText {
     text-align: justify;
     padding: 15px 50px;
-    color: #61615F;
+    color: #575755;
     font-family: orkney_reg;
+    font-weight: lighter;
 }
 
-.mainHeading {
+#researchHeading {
     font-weight: bold;
     padding: 10px 40px;
 }
@@ -116,6 +124,11 @@ hr {
     font-size: 17px;
     margin-right: 15px;
     margin-left: 5px;
+}
+
+#aboutContent {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .names {
@@ -192,7 +205,9 @@ hr {
 /*------------------------------------------------------------*/
 
 /*----------------- Section Menu ----------------------------*/
-.sectionMenu {
+
+#sectionMenuHolder {
+  padding: 20px;
 }
 
 /*------------------------------------------------------------*/
@@ -200,7 +215,7 @@ hr {
 /*------------------- About Piyawat --------------------------*/
 #profilePic {
   float: left;
-  align-items: center;
+  vertical-align: middle;
   height: inherit;
   border: none;
   width: 200px;
@@ -223,6 +238,8 @@ hr {
   width: auto;
   overflow: auto;
   padding: 10px 7px 15px 10px;
+  vertical-align: middle;
+  border-radius: 10%;
 }
 
 /*------------------------------------------------------------*/
