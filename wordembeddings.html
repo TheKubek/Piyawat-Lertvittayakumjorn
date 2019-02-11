@@ -1,17 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <p>Word Embeddings</p>
-    <ul class="menu" style="list-style-type: none;">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="nlp.html">NLPs</a></li>
-      <li><a href="explainnlp.html">Explainable NLPs</a></li>
-      <li><a href="wordembeddings.html">Word Embeddings</a></li>
-      <li><a href="interpwordembeddings.html">Interpretable Word Embeddings</a></li>
-    </ul>
-  </body>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project : Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="piyawatStyles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container" id="mainContainer">
+  <div class="toppane">
+    <div class="pos-f-t" id="littleBar">
+      <div class="collapse" id="navbarToggle">
+        <div class="navbarContent">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-1"></div>
+              <div class="col-sm-2 pageLinks">
+                <a href="index.html">Home</a>
+              </div>
+              <div class="col-sm-2 pageLinks">
+                <a href="nlp.html"><img class="navBarImg" src="Content/Tiles/nlp.png"
+                                        alt="Natural Language Processing"/></a>
+              </div>
+              <div class="col-sm-2 pageLinks">
+                <a href="explainnlp.html"><img class="navBarImg" src="Content/Tiles/explaiNlp.png"
+                                               alt="Explainable Natural Language Processing"/></a>
+              </div>
+              <div class="col-sm-2 pageLinks">
+                <a href="wordembeddings.html"><img class="navBarImg" src="Content/Tiles/wordEmbed.png"
+                                                   alt="Word Embeddings"/></a>
+              </div>
+              <div class="col-sm-2 pageLinks">
+                <a href="interpwordembeddings.html"><img class="navBarImg"
+                                                         src="Content/Tiles/interpretWordEmbed.png"
+                                                         alt="Interpretable Word Embeddings"/></a>
+              </div>
+              <div class="col-sm-1"></div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar-default fixed-left" id="navbar">
+        <div class="container-fluid">
+          <div class="row" id="projectRow">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+              <a href="index.html" id="projectName">INTERPRETABLE WORD EMBEDDINGS & EXPLAINABLE NLP</a>
+            </div>
+            <div class="col-sm-3"></div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="panes">
+    <div class="leftpane">
+      <h1></h1></div>
+    <div class="middlepane">
+      <div id="sectionMenuHolder">
+        <div class="container-fluid" id="sectionMenu">
+          <div class="row popup-gallery">
+            <div class="col-lg-6 col-sm-6 menuHolders">
+              <a class="portfolio-box" href="nlp.html">
+                <img class="img-fluid menuPics" src="Content/Tiles/nlp.png"
+                     alt="Natural Language Processing"/>
+              </a>
+            </div>
+            <div class="col-lg-6 col-sm-6 menuHolders">
+              <a class="portfolio-box" href="explainnlp.html">
+                <img class="img-fluid menuPics" src="Content/Tiles/explaiNlp.png"
+                     alt="Natural Language Processing"/>
+              </a>
+            </div>
+            <div class="col-lg-6 col-sm-6 menuHolders">
+              <a class="portfolio-box" href="wordembeddings.html">
+                <img class="img-fluid menuPics" src="Content/Tiles/wordEmbed.png"
+                     alt="Natural Language Processing"/>
+              </a>
+            </div>
+            <div class="col-lg-6 col-sm-6 menuHolders">
+              <a class="portfolio-box" href="interpwordembeddings.html">
+                <img class="img-fluid menuPics" src="Content/Tiles/interpretWordEmbed.png"
+                     alt="Natural Language Processing"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mainText">
+        <hr>
+        <div class="contentBox">
+          <img id="profilePic" src="https://www.doc.ic.ac.uk/~pl1515/images/Profile2.jpg"
+               alt="Profile Picture" class="imgResizeAndBorder img-fluid">
+          <div id="aboutContent">
+            <h3 id="aboutHeading"><b>About me:</b></h3>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-12">
+                  <p class="tab" id="aboutPiya">
+                    I am Piyawat Lertivittayakumjorn, you can call me ‘Peter’, and I am from
+                    Thailand.
+                    Currently, I am a PhD student in Computing at Imperial College London under the
+                    supervision of Professor Francesca Toni. You can find out more about me on my
+                    personal page <a href="https://www.doc.ic.ac.uk/~pl1515/" id="piyaLink">here</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h3 id="researchHeading"><b>My Research:</b></h3>
+        <p class="tab" id="researchParagraph">
+          I am currently researching on interpretable word embeddings that would be used for an explainable
+          natural language processing (NLP) program. Interpretable word embeddings are representations of
+          words in way that a machine learning algorithm can process but is still able to be understood by a
+          human being. These words would still be associated by values, but these values represent the
+          attributes of the words such as its grammar and context it is used in. An NLP is a program that can
+          process natural languages humans use and run tasks given to process the language such as translation
+          or word comprehension. However, with current implementations of NLP we cannot retrieve any
+          information on how the program processes its tasks due to the nature of machine learning and deep
+          learning. Thus, with the use of interpretable NLP we can pull this information that can justify the
+          program’s actions and fix it if the results are not desirable. This data can also be used to create
+          rules that can be implemented for similar tasks.
+        </p>
+      </div>
+      <hr>
+      <h4 id="teamTitle">OUR TEAM</h4>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-2 ourPics">
+            <img class="img-fluid rounded-circle us" src="Content/Images/fhb.jpg" alt="">
+            <p class="names">KYLE PATEL</p>
+          </div>
+          <div class="col-sm-2 ourPics">
+            <img class="img-fluid rounded-circle us" src="Content/Images/gl818.jpg" alt="">
+            <p class="names">GIACOMO LA SCALA</p>
+          </div>
+          <div class="col-sm-2 ourPics">
+            <img class="img-fluid rounded-circle us" src="Content/Images/ew4018.jpg" alt="">
+            <p class="names">EDWARD WILLIAMS</p>
+          </div>
+          <div class="col-sm-2 ourPics">
+            <img class="img-fluid rounded-circle us" src="Content/Images/fhb.jpg" alt="">
+            <p class="names">KUBAAAAAA</p>
+          </div>
+          <div class="col-sm-2 ourPics">
+            <img class="img-fluid rounded-circle us" src="Content/Images/fhb.jpg" alt="">
+            <p class="names">KEIGO</p>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+      </div>
+      <hr>
+      <div id="bottomBar">
+        <div class="imgHolder">
+          <a href="https://www.doc.ic.ac.uk/~pl1515/">
+            <img class="img-responsive" src="ICLpic.png" align="middle" id="iclLogo">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="rightpane">
+      <h1></h1>
+    </div>
+  </div>
+</div>
+<script>
+  $("#navbar").mouseenter(function () {
+    $(".collapse").collapse("show");
+  });
+  $("#navbar").mouseleave(function () {
+    $(".collapse").collapse("hide");
+  });
+
+  $("#iclLogo").mouseenter(function () {
+    $(this).animate({"max-height": "150px", "padding-top": "20px"});
+  })
+  $("#iclLogo").mouseleave(function () {
+    $(this).animate({"max-height": "125px", "padding-top": "40px"});
+  });
+
+  $(".us").mouseenter(function () {
+    $(this).animate({"opacity": "1"}, 100);
+  })
+  $(".us").mouseleave(function () {
+    $(this).animate({"opacity": "0.7"}, 100);
+  })
+
+  $(".menuPics").mouseenter(function () {
+    $(".menuPics").stop(true);
+    $(".menuPics").animate({"opacity" : "0.7"}, 150);
+    $(this).animate({"opacity" : "1"}, 150);
+
+  })
+  $(".menuPics").mouseleave(function () {
+    $(".menuPics").animate({"opacity" : "1"}, 300);
+  })
+
+  $(".menuHolders").mouseenter(function () {
+    $(this).stop(true);
+    $(this).animate({"padding" : "10px"});
+  })
+
+  $(".menuHolders").mouseleave(function () {
+    $(this).stop(true);
+    $(this).animate({"padding" : "0px"});
+  })
+
+</script>
+
+</body>
 </html>
