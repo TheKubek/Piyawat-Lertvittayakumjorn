@@ -123,6 +123,27 @@ hr {
     src: url("fonts/orkneyRegular.woff");
 }
 
+.subheading {
+    text-align: center;
+}
+
+.summary {
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+p {
+    font-family: orkney_reg;
+    color: black;
+}
+
+li {
+    color: black;
+}
+
 #mainText {
     text-align: justify;
     padding: 15px 50px;
