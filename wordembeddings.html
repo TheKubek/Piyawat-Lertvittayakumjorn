@@ -66,7 +66,7 @@
         <div class="middlepane">
           <div class="progressBar">
             <a href="nlp.html">
-              <img src="Content/Tiles/nlp.png" class="highlightImage" id="nlp"/>
+              <img src="Content/Tiles/nlp.png" class="highlightImage progressImgs" id="nlp"/>
             </a>
             <img src="Content/Images/arrow.png" class="highlightImage arrow"/>
             <a href="wordembeddings.html">
@@ -74,11 +74,11 @@
             </a>
             <img src="Content/Images/arrow.png" class="highlightImage arrow"/>
             <a href="explainnlp.html">
-              <img src="Content/Tiles/explaiNlp.png" class="highlightImage" id="explaiNlp"/>
+              <img src="Content/Tiles/explaiNlp.png" class="highlightImage progressImgs" id="explaiNlp"/>
             </a>
             <img src="Content/Images/arrow.png" class="highlightImage arrow"/>
             <a href="interpwordembeddings.html">
-              <img src="Content/Tiles/interpretWordEmbed.png" class="highlightImage" id="interpretWordEmbed"/>
+              <img src="Content/Tiles/interpretWordEmbed.png" class="highlightImage progressImgs" id="interpretWordEmbed"/>
             </a>
           </div>
             <div id="mainText">
@@ -270,6 +270,13 @@
         $(this).animate({"opacity": "1"}, 100);
     })
     $(".us").mouseleave(function () {
+        $(this).animate({"opacity": "0.7"}, 100);
+    })
+
+    $(".progressImgs").mouseenter(function () {
+        $(this).animate({"opacity": "1"}, 100);
+    })
+    $(".progressImgs").mouseleave(function () {
         $(this).animate({"opacity": "0.7"}, 100);
     })
 
