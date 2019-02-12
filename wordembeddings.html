@@ -89,8 +89,6 @@
                     </div>
                 </div>
                 <br>
-                <h3 class="subheading"><b>MY RESEARCH</b></h3>
-                <hr>
                 <p class="info" id="researchParagraph">
                     These dimensions are made through the use of neural networks with methods such as Word2Vec so in
                     general these dimensions are not known. Thus, it is not known how the words are similar or differ to
@@ -104,80 +102,137 @@
                     words ‘cat’ and ‘dog’ would return numbers closer to 1 whereas ‘cat’ and ‘sun’ would be closer to 0
                 </p>
                 <hr>
-            </div>
-            <div class="container-fluid">
-                <p class="info">
-                    Example:
-                    Let ‘cat’, ‘dog’ and ‘sun’ be vectors in the 2D plane
-                    <br>
-                </p>
+                <h3 class="subheading"><b>EXAMPLE</b></h3><br>
+
+                <div class="container-fluid">
+                    <p class="info">
+                        Example:
+                        Let ‘cat’, ‘dog’ and ‘sun’ be vectors in the 2D plane
+                        <br>
+                    </p>
                     <div>
-                <p class="info"
-                   style="border: 1px solid black; padding-bottom: 0px; margin-left: 40px; margin-right: 40px">
+                        <p class="info"
+                           style="border: 1px solid black; padding-bottom: 0px; margin-left: 40px; margin-right: 40px">
+                            <br>
+                            ‘Cat’ will be represented as a vector \begin{bmatrix}2\\10\end{bmatrix}
+                            ‘Dog’ will be represented as a vector \begin{bmatrix}1\\10\end{bmatrix}
+                            ‘Sun’ will be represented as a vector \begin{bmatrix}10\\2\end{bmatrix}
+                            <br>
+                        </p>
+                    </div>
                     <br>
-                    ‘Cat’ will be represented as a vector \begin{bmatrix}2\\10\end{bmatrix}
-                    ‘Dog’ will be represented as a vector \begin{bmatrix}1\\10\end{bmatrix}
-                    ‘Sun’ will be represented as a vector \begin{bmatrix}10\\2\end{bmatrix}
+                    <p class="info">The dot product formula used to calculate the similarity of two vectors
+                        $$\cos \theta = \frac{u \cdot v}{\lvert \lvert u \rvert \lvert v \rvert}$$</p>
                     <br>
-                </p>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img class="img-fluid" src="Content/Images/vectors.PNG"
+                                     alt="Vectors"/>
+                            </div>
+                            <div class="col-sm-6">
+                                <img class="img-fluid" src="Content/Images/vectors2.PNG"
+                                     alt="Vectors"/>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="container-fluid" style="text-align: center">
+                    <p class="info">
+                        In the diagram above ‘dog’, ‘cat’ and ‘sun’ are represented as vectors on a 2D Cartesian plane.
+                        The
+                        cosine value of α is 0.995 thus close to 1 while the value of β is 0.384 which is closer to 0,
+                        thus
+                        representing the similarity or difference of the words
+                        <br><br>
+                        Therefore, when large datasets are provided similar words will group together, thus forming
+                        different groups of words that are closely related such as a group of countries or animals.
+                        Word embeddings can also represent the relationship of words such as their tenses or male-female
+                        relationship
+                        <br>
+                    <hr>
+                    <br>
+                    For example:
+                    The figure below has vector representations for ‘male’, ‘female’, ‘bull’ and ‘cow’
+                    <br><br>
+                    </p>
+                    <div class="row">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-8">
+                            <img class="img-fluid" src="Content/Images/vectorsFM.PNG"
+                                 alt="VectorsFM"/>
+                        </div>
+                        <div class="col-sm-2"></div>
+                    </div>
+                    <p class="info">
+                        <br>
+                        The next figure shows the vector addition of $$(\vec{bull} + \vec{female}-\vec{male}) =
+                        \vec{cow}$$ Since, the vector
+                        from ‘male’ to ‘female’ is represented as $$(\vec{female}-\vec{male})$$
+                    </p>
+                    <div class="row">
+                        <br>
+                        <br>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-8">
+                            <img class="img-fluid" src="Content/Images/vectorsFM2.PNG"
+                                 alt="VectorsFM2"/>
+                        </div>
+                        <div class="col-sm-2"></div>
+                    </div>
+                    <br>
+                    <hr>
+                    <p class="info">
+                        Further reading on the various types of word embeddings and a deeper explanation on the implementations of it can be found on these links
+                        <br><br>
+                        <a href="https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/" class="piyaLink">https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/</a>.
+                        <a href="https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/" class="piyaLink">https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/</a>.
+                        <a href="https://www.tensorflow.org/tutorials/representation/word2vec" class="piyaLink">https://www.tensorflow.org/tutorials/representation/word2vec</a>.
+                    </p>
+                    <hr>
+                </div>
             </div>
-            <br>
-                <p class="info">The dot product formula used to calculate the similarity of two vectors
-                    $$\cos \theta = \frac{u \cdot v}{\lvert \lvert u \rvert \lvert v \rvert}$$</p>
-                <br>
+            <h4 id="teamTitle">OUR TEAM</h4>
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <img class="img-fluid" src="Content/Images/vectors.PNG"
-                             alt="Vectors"/>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-2 ourPics">
+                        <img class="img-fluid rounded-circle us" src="Content/Images/fhb.jpg" alt="">
+                        <p class="names">KYLE PATEL</p>
                     </div>
-                    <div class="col-sm-6">
-                        <img class="img-fluid" src="Content/Images/vectors2.PNG"
-                             alt="Vectors"/>
+                    <div class="col-sm-2 ourPics">
+                        <img class="img-fluid rounded-circle us" src="Content/Images/gl818.jpg" alt="">
+                        <p class="names">GIACOMO LA SCALA</p>
                     </div>
+                    <div class="col-sm-2 ourPics">
+                        <img class="img-fluid rounded-circle us" src="Content/Images/ew4018.jpg" alt="">
+                        <p class="names">EDWARD WILLIAMS</p>
+                    </div>
+                    <div class="col-sm-2 ourPics">
+                        <img class="img-fluid rounded-circle us" src="Content/Images/fhb.jpg" alt="">
+                        <p class="names">KUBAAAAAA</p>
+                    </div>
+                    <div class="col-sm-2 ourPics">
+                        <img class="img-fluid rounded-circle us" src="Content/Images/fhb.jpg" alt="">
+                        <p class="names">KEIGO</p>
+                    </div>
+                    <div class="col-sm-1"></div>
                 </div>
-                <hr>
-        </div>
-        <br>
-        <h4 id="teamTitle">OUR TEAM</h4>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-2 ourPics">
-                    <img class="img-fluid rounded-circle us" src="Content/Images/fhb.jpg" alt="">
-                    <p class="names">KYLE PATEL</p>
+            </div>
+            <hr>
+            <div id="bottomBar">
+                <div class="imgHolder">
+                    <a href="https://www.doc.ic.ac.uk/~pl1515/">
+                        <img class="img-responsive" src="ICLpic.png" align="middle" id="iclLogo">
+                    </a>
                 </div>
-                <div class="col-sm-2 ourPics">
-                    <img class="img-fluid rounded-circle us" src="Content/Images/gl818.jpg" alt="">
-                    <p class="names">GIACOMO LA SCALA</p>
-                </div>
-                <div class="col-sm-2 ourPics">
-                    <img class="img-fluid rounded-circle us" src="Content/Images/ew4018.jpg" alt="">
-                    <p class="names">EDWARD WILLIAMS</p>
-                </div>
-                <div class="col-sm-2 ourPics">
-                    <img class="img-fluid rounded-circle us" src="Content/Images/fhb.jpg" alt="">
-                    <p class="names">KUBAAAAAA</p>
-                </div>
-                <div class="col-sm-2 ourPics">
-                    <img class="img-fluid rounded-circle us" src="Content/Images/fhb.jpg" alt="">
-                    <p class="names">KEIGO</p>
-                </div>
-                <div class="col-sm-1"></div>
             </div>
         </div>
-        <hr>
-        <div id="bottomBar">
-            <div class="imgHolder">
-                <a href="https://www.doc.ic.ac.uk/~pl1515/">
-                    <img class="img-responsive" src="ICLpic.png" align="middle" id="iclLogo">
-                </a>
-            </div>
+        <div class="rightpane">
+            <h1></h1>
         </div>
     </div>
-    <div class="rightpane">
-        <h1></h1>
-    </div>
-</div>
 </div>
 <script>
     $("#navbar").mouseenter(function () {
