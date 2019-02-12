@@ -64,36 +64,6 @@
         <div class="leftpane">
             <h1></h1></div>
         <div class="middlepane">
-            <div id="sectionMenuHolder">
-                <div class="container-fluid" id="sectionMenu">
-                    <div class="row popup-gallery">
-                        <div class="col-lg-6 col-sm-6 menuHolders">
-                            <a class="portfolio-box" href="nlp.html">
-                                <img class="img-fluid menuPics" src="Content/Tiles/nlp.png"
-                                     alt="Natural Language Processing"/>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-sm-6 menuHolders">
-                            <a class="portfolio-box" href="explainnlp.html">
-                                <img class="img-fluid menuPics" src="Content/Tiles/explaiNlp.png"
-                                     alt="Natural Language Processing"/>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-sm-6 menuHolders">
-                            <a class="portfolio-box" href="wordembeddings.html">
-                                <img class="img-fluid menuPics" src="Content/Tiles/wordEmbed.png"
-                                     alt="Natural Language Processing"/>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-sm-6 menuHolders">
-                            <a class="portfolio-box" href="interpwordembeddings.html">
-                                <img class="img-fluid menuPics" src="Content/Tiles/interpretWordEmbed.png"
-                                     alt="Natural Language Processing"/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div id="mainText">
                 <hr>
                 <div class="contentBox">
@@ -143,19 +113,29 @@
                 </p>
                     <div>
                 <p class="info"
-                   style="border: 1px solid black; padding-bottom: 25px; margin-left: 40px; margin-right: 40px">
+                   style="border: 1px solid black; padding-bottom: 0px; margin-left: 40px; margin-right: 40px">
                     <br>
-                    ‘Cat’ will be represented as a vector (2¦10)
-                    <br>
-                    ‘Dog’ will be represented as a vector (1¦10)
-                    <br>
-                    ‘Sun’ will be represented as a vector (10¦2)
+                    ‘Cat’ will be represented as a vector \begin{bmatrix}2\\10\end{bmatrix}
+                    ‘Dog’ will be represented as a vector \begin{bmatrix}1\\10\end{bmatrix}
+                    ‘Sun’ will be represented as a vector \begin{bmatrix}10\\2\end{bmatrix}
                     <br>
                 </p>
             </div>
             <br>
-            The dot product formula used to calculate the similarity of two vectors:
-            Cos θ=(A⋅B)/(|A||B|)
+                <p class="info">The dot product formula used to calculate the similarity of two vectors
+                    $$\cos \theta = \frac{u \cdot v}{\lvert \lvert u \rvert \lvert v \rvert}$$</p>
+                <br>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img class="img-fluid" src="Content/Images/vectors.PNG"
+                             alt="Vectors"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <img class="img-fluid" src="Content/Images/vectors2.PNG"
+                             alt="Vectors"/>
+                    </div>
+                </div>
+                <hr>
         </div>
         <br>
         <h4 id="teamTitle">OUR TEAM</h4>
