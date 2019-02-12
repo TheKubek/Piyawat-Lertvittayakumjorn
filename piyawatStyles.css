@@ -298,6 +298,31 @@ li {
 
 /*------------------------------------------------------------*/
 
+/*------------------ Progress Images -------------------------*/
+.progressBar {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.highlightImage {
+  width: 100px;
+  height: 100px;
+  opacity: 0.4;
+  border-radius: 10px;
+}
+
+.currentPageProgressBar {
+  opacity: 1;
+  border: solid grey 3px;
+}
+
+.arrow {
+  opacity: 0.8;
+  width: 70px;
+}
+
+/*------------------------------------------------------------*/
+
 
 /*------------------ Random Make it Work ---------------------*/
 /* Indents paragraph*/
