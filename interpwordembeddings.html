@@ -84,40 +84,63 @@
       <div id="mainText">
         <hr>
         <div class="contentBox">
-          <img id="profilePic" src="https://www.doc.ic.ac.uk/~pl1515/images/Profile2.jpg"
-               alt="Profile Picture" class="imgResizeAndBorder img-fluid">
           <div id="aboutContent">
-            <h3 id="aboutHeading"><b>About me:</b></h3>
+            <h3 class="subheading"><b>INTERPRETABLE WORD EMBEDDINGS</b></h3>
             <div class="container-fluid">
               <div class="row">
                 <div class="col-sm-12">
-                  <p class="tab" id="aboutPiya">
-                    I am Piyawat Lertivittayakumjorn, you can call me ‘Peter’, and I am from
-                    Thailand.
-                    Currently, I am a PhD student in Computing at Imperial College London under the
-                    supervision of Professor Francesca Toni. You can find out more about me on my
-                    personal page <a href="https://www.doc.ic.ac.uk/~pl1515/" id="piyaLink">here</a>.
+                  <hr>
+                  <p class="summary">
+                    To enable explainable NLP an interpretable word embedding is needed to give further context to the words and be able to explain these contexts. Thus, this will result in tighter groupings between words and the reasoning behind them are known. Additionally, interpretable word embeddings allow for multiple meanings to be attached to the words, such as ‘tear’ as in liquid in the eyes when crying or ‘tear’ used when an object is ripped. This would therefore allow an NLP to explain the reason behind its result and allow for corrections to be taken when an undesirable output is given.
                   </p>
+                  <hr>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <hr>
-        <h3 id="researchHeading"><b>My Research:</b></h3>
-        <p class="tab" id="researchParagraph">
-          I am currently researching on interpretable word embeddings that would be used for an explainable
-          natural language processing (NLP) program. Interpretable word embeddings are representations of
-          words in way that a machine learning algorithm can process but is still able to be understood by a
-          human being. These words would still be associated by values, but these values represent the
-          attributes of the words such as its grammar and context it is used in. An NLP is a program that can
-          process natural languages humans use and run tasks given to process the language such as translation
-          or word comprehension. However, with current implementations of NLP we cannot retrieve any
-          information on how the program processes its tasks due to the nature of machine learning and deep
-          learning. Thus, with the use of interpretable NLP we can pull this information that can justify the
-          program’s actions and fix it if the results are not desirable. This data can also be used to create
-          rules that can be implemented for similar tasks.
+        <h3 class="subheading"><b>Creation of Interpretable Word Embeddings</b></h3>
+        <br>
+        <p class="info" id="researchParagraph">
+          The creation of interpretable word embeddings is done by associating each dimension of the matrix representation of the words with a particular meaning.
+          The embeddings should have a reasonable size so the calculations on these matrices would not be too taxing but still be very expressive in representing the contexts of the words.
+          This should also be interpretable.
+          <br>
+          For word embeddings to be interpretable:
+          <ul>
+            <li>It needs to be sparse</li>
+            <li>Have few large values in a row or column</li>
+            <li>Values are non-negative</li>
+          </ul>
+          Currently the constructions of interpretable word embeddings are split into two methods:
         </p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 examples">
+                    <p>
+                        <span style="font-weight:bold">Through the enforcement of constraints during the construction:</span><br><br>
+                        <ul>
+                          <li>This is done with non-negative matrix factorization</li>
+                          <li>And sparse neural embeddings</li>
+                        </ul>
+                        <br><br>
+                    </p>
+                </div>
+                <div class="col-lg-6 examples">
+                    <p>
+                      <span style="font-weight:bold">Using matrix transformations to make dense embeddings:</span><br><br>
+                      <ul>
+                        <li>With matrix rotation</li>
+                        <li>Matrix factorization</li>
+                        <li>K-sparse autoencoder</li>
+                        <li>Linear mapping with the help of an external dataset</li>
+                      </ul>
+                      <br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
       </div>
       <hr>
       <h4 id="teamTitle">OUR TEAM</h4>
