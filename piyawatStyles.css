@@ -296,11 +296,11 @@ li {
 
 .contentBox {
   background-color: #F0F0F0;
-  width: auto;
-  overflow: auto;
   padding: 10px 7px 15px 10px;
   vertical-align: middle;
-  border-radius: 10%;
+  border-radius: 45px;
+  width: 95%;
+  margin:auto;
 }
 
 /*------------------------------------------------------------*/
