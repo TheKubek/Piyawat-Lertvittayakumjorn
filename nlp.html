@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="piyawatStyles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'
+            async></script>
 </head>
 <body>
 
@@ -20,7 +22,8 @@
                         <div class="row">
                             <div class="col-sm-1"></div>
                             <div class="col-sm-2 pageLinks">
-                                <a href="index.html"><img class="navBarImg" src="Content/Tiles/home.png" alt="Home"/></a>
+                                <a href="index.html"><img class="navBarImg" src="Content/Tiles/home.png"
+                                                          alt="Home"/></a>
                             </div>
                             <div class="col-sm-2 pageLinks">
                                 <a href="nlp.html"><img class="navBarImg" src="Content/Tiles/nlp.png"
@@ -50,7 +53,7 @@
                     <div class="row" id="projectRow">
                         <div class="col-sm-3"></div>
                         <div class="col-sm-6">
-                            <a href="index.html" id="projectName">NATURAL LANGUAGE PROCESSING</a>
+                            <a href="index.html" id="projectName">NLP</a>
                         </div>
                         <div class="col-sm-3"></div>
                     </div>
@@ -74,42 +77,77 @@
             <div id="mainText">
                 <hr>
                 <div class="contentBox">
-                    <img id="profilePic" src="https://www.doc.ic.ac.uk/~pl1515/images/Profile2.jpg"
-                         alt="Profile Picture" class="imgResizeAndBorder img-fluid">
                     <div id="aboutContent">
-                        <h3 id="aboutHeading"><b>About me:</b></h3>
+                        <h3 class="subheading"><b>NATURAL LANGUAGE PROCESSING</b></h3>
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <p class="tab" id="aboutPiya">
-                                        I am Piyawat Lertivittayakumjorn, you can call me ‘Peter’, and I am from
-                                        Thailand.
-                                        Currently, I am a PhD student in Computing at Imperial College London under the
-                                        supervision of Professor Francesca Toni. You can find out more about me on my
-                                        personal page <a href="https://www.doc.ic.ac.uk/~pl1515/" id="piyaLink">here</a>.
+                                    <hr>
+                                    <p class="summary">
+                                        So what is NLP? Natural Language Proccessing! It mainly involves the
+                                        construction of computational algorithms that can process and represent human
+                                        language. A more recent and well known use is Amazon’s voice assistant Alexa.So
+                                        what is NLP? Natural Language Proccessing! It mainly involves the construction
+                                        of computational algorithms that can process and represent human language. A
+                                        more recent and well known use is Amazon’s voice assistant Alexa
                                     </p>
+                                    <hr>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <br>
                 <hr>
-                <h3 id="researchHeading"><b>My Research:</b></h3>
-                <p class="tab" id="researchParagraph">
-                    I am currently researching on interpretable word embeddings that would be used for an explainable
-                    natural language processing (NLP) program. Interpretable word embeddings are representations of
-                    words in way that a machine learning algorithm can process but is still able to be understood by a
-                    human being. These words would still be associated by values, but these values represent the
-                    attributes of the words such as its grammar and context it is used in. An NLP is a program that can
-                    process natural languages humans use and run tasks given to process the language such as translation
-                    or word comprehension. However, with current implementations of NLP we cannot retrieve any
-                    information on how the program processes its tasks due to the nature of machine learning and deep
-                    learning. Thus, with the use of interpretable NLP we can pull this information that can justify the
-                    program’s actions and fix it if the results are not desirable. This data can also be used to create
-                    rules that can be implemented for similar tasks.
+                <h3 class="subheading"><b>A Brief History of NLP</b></h3><br>
+                <p class="info" id="researchParagraph">
+                    Arguably first major advancment was the birth of Collosus, the computer created by Sir Alan Turing.
+                    This machine was designed to crack the messages encoded by the German Enigma machine. It was with
+                    the threat of nuclear war after WWII that NLP developped further. This involved the creation of
+                    automated translation of Russian test to english
+                    <br><br>
+
+                    The early methods during the 1950s involved using language rules, computational linguistics and
+                    statistics. Coming towards the end of the 20th century, methods developped to Corpus based
+                    statistics. This method looked at using statictics including normalised frequency and type-token
+                    ratio. A token is an instance of a wordform in the text. By examining the ratio of the number of
+                    types of token by the total number of tokens gives a measure of the range of vocabulary used in the
+                    text. These statistics were then used in significance tests with adjacent words and collections to
+                    see a particular words had similar statistcs in a different reference text. Depending on the
+                    significance of the result, a keyword could then be extracted
+                    <br><br>
+
+                    Since then, methods have progressed using Supervised Machine learning and Deep learning, what is
+                    used today. Supervised Machine Learning involved using decision tree learning to output different
+                    words depending on their choices in the tree
                 </p>
+                <hr>
+                <p class="info">
+                    What is not more commonly understood by NLP, is that the subject also involves processing Speech and
+                    other forms of language, for example processing sign language, and even outputting language having
+                    interpretted speech. More technically, NLP systems understand Natural Language, execute requested
+                    tasks and produce Natural Language
+                </p>
+                <hr>
+                <h3 class="subheading"><b>MOSTLY SOLVED</b></h3><br>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img class="img-fluid" src="Content/Images/SpamDetection.PNG"
+                                 alt="Spam Detection"/>
+                        </div>
+                        <div class="col-lg-4">
+                            <img class="img-fluid" src="Content/Images/POS.PNG"
+                                 alt="POS"/>
+                        </div>
+                        <div class="col-lg-4">
+                            <img class="img-fluid" src="Content/Images/NameEntity.PNG"
+                                 alt="Name Entity"/>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <hr>
+
             <h4 id="teamTitle">OUR TEAM</h4>
             <div class="container-fluid">
                 <div class="row">
@@ -175,22 +213,22 @@
 
     $(".menuPics").mouseenter(function () {
         $(".menuPics").stop(true);
-        $(".menuPics").animate({"opacity" : "0.7"}, 150);
-        $(this).animate({"opacity" : "1"}, 150);
+        $(".menuPics").animate({"opacity": "0.7"}, 150);
+        $(this).animate({"opacity": "1"}, 150);
 
     })
     $(".menuPics").mouseleave(function () {
-        $(".menuPics").animate({"opacity" : "1"}, 300);
+        $(".menuPics").animate({"opacity": "1"}, 300);
     })
 
     $(".menuHolders").mouseenter(function () {
         $(this).stop(true);
-        $(this).animate({"padding" : "10px"});
+        $(this).animate({"padding": "10px"});
     })
 
     $(".menuHolders").mouseleave(function () {
         $(this).stop(true);
-        $(this).animate({"padding" : "0px"});
+        $(this).animate({"padding": "0px"});
     })
 
 </script>
