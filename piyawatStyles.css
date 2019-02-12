@@ -331,10 +331,19 @@ li {
 /*------------------------------------------------------------*/
 
 
-/*------------------ Random Make it Work ---------------------*/
+/*--------------------------- Extra --------------------------*/
 /* Indents paragraph*/
 .tab {
-    text-indent: 5%;
+  text-indent: 5%;
+}
+table {
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid grey;
+  text-align: center;
+  border-collapse: collapse;
 }
 
 /*------------------------------------------------------------*/

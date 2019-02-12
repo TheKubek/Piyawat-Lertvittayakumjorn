@@ -136,10 +136,35 @@
                         <li>K-sparse autoencoder</li>
                         <li>Linear mapping with the help of an external dataset</li>
                       </ul>
-                      <br><br>
                     </p>
                 </div>
             </div>
+        </div>
+        <hr>
+        <h3 class="subheading"><b>EXAMPLE</b></h3><br>
+        <div class="container-fluid">
+            <p class="info">
+              Using Non-Negative Sparse Embedding yields the following representation for the word 'tear':
+            </p>
+            <table id="interpretExampleTable">
+              <tr>
+                <th>Weight</th>
+                <th>Words (per weighted dimension)</th>
+              </tr>
+              <tr>
+                <td>0.69</td>
+                <td>eye, sad, cry</td>
+              </tr>
+              <tr>
+                <td>0.42</td>
+                <td>rip, broken, hole</td>
+              </tr>
+            </table>
+            <p class="info">
+              <br>
+              This gives the following graph interpretation of giving enough context to the word 'tear':
+            </p>
+            <img class="img-fluid" src="Content/Images/vectorsContext.PNG" alt="Extra context representation for 'tear'"/>
         </div>
       </div>
       <hr>
