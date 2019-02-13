@@ -359,4 +359,8 @@ table, th, td {
   border-collapse: collapse;
 }
 
+#iclLogo {
+  text-align: center;
+}
+
 /*------------------------------------------------------------*/

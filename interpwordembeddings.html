@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,19 +66,19 @@
     <div class="middlepane">
       <div class="progressBar">
         <a href="nlp.html">
-          <img src="Content/Tiles/nlp.png" class="highlightImage progressImgs" id="nlp"/>
+          <img src="Content/Tiles/nlp.png" class="highlightImage progressImgs" alt="Natural Language Processing" id="nlp"/>
         </a>
-        <img src="Content/Images/arrow.png" class="highlightImage arrow"/>
+        <img src="Content/Images/arrow.png" class="highlightImage arrow" alt="Arrow"/>
         <a href="wordembeddings.html">
-          <img src="Content/Tiles/wordEmbed.png" class="highlightImage progressImgs" id="wordEmbed"/>
+          <img src="Content/Tiles/wordEmbed.png" class="highlightImage progressImgs" alt="Word Embeddings" id="wordEmbed"/>
         </a>
-        <img src="Content/Images/arrow.png" class="highlightImage arrow"/>
+        <img src="Content/Images/arrow.png" class="highlightImage arrow" alt="Arrow"/>
         <a href="explainnlp.html">
-          <img src="Content/Tiles/explaiNlp.png" class="highlightImage progressImgs" id="explaiNlp"/>
+          <img src="Content/Tiles/explaiNlp.png" class="highlightImage progressImgs" alt="Explainable Natural Language Processing" id="explaiNlp"/>
         </a>
-        <img src="Content/Images/arrow.png" class="highlightImage arrow"/>
+        <img src="Content/Images/arrow.png" class="highlightImage arrow" alt="Arrow"/>
         <a href="interpwordembeddings.html">
-          <img src="Content/Tiles/interpretWordEmbed.png" class="highlightImage currentPageProgressBar" id="interpretWordEmbed"/>
+          <img src="Content/Tiles/interpretWordEmbed.png" class="highlightImage currentPageProgressBar" alt="Interpretable Word Embeddings" id="interpretWordEmbed"/>
         </a>
       </div>
       <div id="mainText">
@@ -102,42 +102,41 @@
         <hr>
         <h3 class="subheading"><b>Creation of Interpretable Word Embeddings</b></h3>
         <br>
-        <p class="info" id="researchParagraph">
-          The creation of interpretable word embeddings is done by associating each dimension of the matrix representation of the words with a particular meaning.
+        <div class="info" id="researchParagraph">
+          <p>The creation of interpretable word embeddings is done by associating each dimension of the matrix representation of the words with a particular meaning.
           The embeddings should have a reasonable size so the calculations on these matrices would not be too taxing but still be very expressive in representing the contexts of the words.
           This should also be interpretable.
           <br><br>
-          For word embeddings to be interpretable:
+          For word embeddings to be interpretable:</p>
           <ul>
             <li>It needs to be sparse</li>
             <li>Have few large values in a row or column</li>
             <li>Values are non-negative</li>
           </ul>
-          <br>
-          Currently the constructions of interpretable word embeddings are split into two methods:
-        </p>
+          <p><br>
+          Currently the constructions of interpretable word embeddings are split into two methods:</p>
+        </div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 examples">
                     <p>
-                        <span style="font-weight:bold">Through the enforcement of constraints during the construction:</span><br><br>
+                        <span style="font-weight:bold">Through the enforcement of constraints during the construction:</span><br><br></p>
                         <ul>
                           <li>This is done with non-negative matrix factorization</li>
                           <li>And sparse neural embeddings</li>
                         </ul>
-                        <br><br>
+                        <p><br><br>
                     </p>
                 </div>
                 <div class="col-lg-6 examples">
                     <p>
-                      <span style="font-weight:bold">Using matrix transformations to make dense embeddings:</span><br><br>
+                      <span style="font-weight:bold">Using matrix transformations to make dense embeddings:</span><br><br></p>
                       <ul>
                         <li>With matrix rotation</li>
                         <li>Matrix factorization</li>
                         <li>K-sparse autoencoder</li>
                         <li>Linear mapping with the help of an external dataset</li>
                       </ul>
-                    </p>
                 </div>
             </div>
         </div>
@@ -191,7 +190,7 @@
               <br>
               <p class="info">
                  <a id="NNSE">[1] </a>
-                Brian Murphy et al. "Non-Negative Sparse Embedding" Machine Learning Department, Carnegie Mellon 
+                Brian Murphy et al. "Non-Negative Sparse Embedding" Machine Learning Department, Carnegie Mellon
                 University,
                   <a href="http://www.cs.cmu.edu/~bmurphy/NNSE/" class="piyaLink">http://www.cs.cmu.edu/~bmurphy/NNSE/</a>.
                  <br><br>
@@ -230,7 +229,7 @@
       <div id="bottomBar">
         <div class="imgHolder">
           <a href="https://www.doc.ic.ac.uk/~pl1515/">
-            <img class="img-responsive" src="ICLpic.png" align="middle" id="iclLogo">
+            <img class="img-responsive" src="ICLpic.png" alt="Imperial College Logo" id="iclLogo">
           </a>
         </div>
       </div>
