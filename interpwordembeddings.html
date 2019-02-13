@@ -106,13 +106,14 @@
           The creation of interpretable word embeddings is done by associating each dimension of the matrix representation of the words with a particular meaning.
           The embeddings should have a reasonable size so the calculations on these matrices would not be too taxing but still be very expressive in representing the contexts of the words.
           This should also be interpretable.
-          <br>
+          <br><br>
           For word embeddings to be interpretable:
           <ul>
             <li>It needs to be sparse</li>
             <li>Have few large values in a row or column</li>
             <li>Values are non-negative</li>
           </ul>
+          <br>
           Currently the constructions of interpretable word embeddings are split into two methods:
         </p>
         <div class="container-fluid">
@@ -142,9 +143,10 @@
         </div>
         <hr>
         <h3 class="subheading"><b>EXAMPLE</b></h3><br>
-        <div class="container-fluid">
+        <div class="container-fluid" style="text-align: center">
             <p class="info">
               Using Non-Negative Sparse Embedding yields the following representation for the word 'tear':
+              <a href="#NNSE" class="piyaLink"><sup>[1]</sup></a>
             </p>
             <table id="interpretExampleTable">
               <tr>
@@ -164,8 +166,37 @@
               <br>
               This gives the following graph interpretation of giving enough context to the word 'tear':
             </p>
-            <img class="img-fluid" src="Content/Images/vectorsContext.PNG" alt="Extra context representation for 'tear'"/>
-        </div>
+            <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-8">
+                <img class="img-fluid" src="Content/Images/vectorsContext.PNG" alt="Extra context representation for 'tear'"/>
+              </div>
+              <div class="col-sm-2"></div>
+            </div>
+            <br>
+            <hr>
+              <h3 class="subheading"><b>FURTHER READING</b></h3>
+              <p class="info">
+                Further reading on interpretable word embeddings and a deeper explanation on the implementations of it can be found on these links:
+                <br><br>
+                <a href="http://aclweb.org/anthology/W18-5442" class="piyaLink">http://aclweb.org/anthology/W18-5442</a>.
+                <br>
+                <a href="http://www.cs.cmu.edu/~bmurphy/NNSE/" class="piyaLink">http://www.cs.cmu.edu/~bmurphy/NNSE/</a>.
+                <br>
+                <a href="https://arxiv.org/pdf/1711.00331.pdf" class="piyaLink">https://arxiv.org/pdf/1711.00331.pdf</a>.
+                <br><br>
+              </p>
+            <hr>
+            <h3 class="subheading"><b>REFERENCES</b></h3>
+              <br>
+              <p class="info">
+                 <a id="NNSE">[1] </a>
+                Brian Murphy et al. "Non-Negative Sparse Embedding" Machine Learning Department, Carnegie Mellon 
+                University,
+                  <a href="http://www.cs.cmu.edu/~bmurphy/NNSE/" class="piyaLink">http://www.cs.cmu.edu/~bmurphy/NNSE/</a>.
+                 <br><br>
+               </p>
+          </div>
       </div>
       <hr>
       <h4 id="teamTitle">OUR TEAM</h4>
